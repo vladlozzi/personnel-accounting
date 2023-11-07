@@ -1,0 +1,10 @@
+PRIVATE RowC
+	IF EMPTY(Upd)
+		COUNT TO RowC
+	    GO TOP
+		IF RowC=0
+			APPEND BLANK
+		ENDIF
+	ENDIF
+RETURN .t.
+
